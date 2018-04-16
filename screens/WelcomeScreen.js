@@ -1,16 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-const WelcomeScreen = () => (
-  <View style={styles.container}>
-    <Text>WelcomeScreen</Text>
-  </View>
-);
+class WelcomeScreen extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text> WelcomeScreen </Text>
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#0000FF",
+    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center"
   }
